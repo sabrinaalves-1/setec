@@ -55,10 +55,11 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.logo-text
-{ font-size: 3rem; 
- font-weight: bold; 
- color: #1e3a8a; }
+.logo-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
 
 .loading-title {
   font-size: 4rem;
@@ -431,464 +432,88 @@ body {
 }
 
 .about-card {
-  background: rgba(17, 24, 39, 0.5);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(75, 85, 99, 0.3);
-  border-radius: 1rem;
+  background: rgba(17, 24, 39, 0.9);
   padding: 2rem;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .about-card:hover {
-  border-color: rgba(147, 51, 234, 0.5);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
 }
 
-.about-card.mission:hover {
-  border-color: rgba(147, 51, 234, 0.5);
-}
-
-.about-card.ai:hover {
-  border-color: rgba(6, 182, 212, 0.5);
-}
-
-.about-card.development:hover {
-  border-color: rgba(59, 130, 246, 0.5);
-}
-
-.about-card.innovation:hover {
-  border-color: rgba(236, 72, 153, 0.5);
-}
-
-.card-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-card h3 {
   font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.mission .card-icon {
-  background: #7c3aed;
-  color: white;
-}
-
-.ai .card-icon {
-  background: #06b6d4;
-  color: #000;
-}
-
-.development .card-icon {
-  background: #3b82f6;
-  color: white;
-}
-
-.innovation .card-icon {
-  background: #ec4899;
-  color: white;
-}
-
-.card-content h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.75rem;
-}
-
-.card-content p {
-  color: #9ca3af;
-  line-height: 1.6;
-}
-
-/* Past Events */
-.past-events {
-  padding: 5rem 0;
-  background: #111827;
-}
-
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-}
-
-.event-card {
-  background: rgba(31, 41, 55, 0.5);
-  border: 1px solid rgba(75, 85, 99, 0.3);
-  border-radius: 1rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.event-card:hover {
-  border-color: rgba(75, 85, 99, 0.6);
-  transform: scale(1.05);
-}
-
-.event-header {
-  height: 192px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.purple-gradient {
-  background: linear-gradient(135deg, #7c3aed, #3b82f6);
-}
-
-.cyan-gradient {
-  background: linear-gradient(135deg, #06b6d4, #3b82f6);
-}
-
-.pink-gradient {
-  background: linear-gradient(135deg, #ec4899, #7c3aed);
-}
-
-.event-logo {
-  font-size: 4rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.event-year {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-}
-
-.event-content {
-  padding: 2rem;
-}
-
-.event-content h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
   margin-bottom: 1rem;
+  font-weight: 700;
+  color: #a855f7;
 }
 
-.event-content p {
-  color: #9ca3af;
-  margin-bottom: 1rem;
-}
-
-.participants {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #06b6d4;
-  font-weight: 600;
-}
-
-/* Invitation */
-.invitation {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, #7c3aed 0%, #1e40af 50%, #06b6d4 100%);
-}
-
-.invitation-content {
-  text-align: center;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.invitation h2 {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1.5rem;
-}
-
-.invitation p {
-  font-size: 1.25rem;
-  color: #bfdbfe;
-  margin-bottom: 3rem;
-  line-height: 1.6;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.feature {
-  text-align: center;
-}
-
-.feature-icon {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
-  border-radius: 1rem;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 2rem;
-  color: white;
-}
-
-.feature h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.feature p {
-  color: #bfdbfe;
+.about-card p {
   font-size: 1rem;
-  margin: 0;
-}
-
-/* Registration */
-.registration {
-  padding: 5rem 0;
-  background: #000;
-}
-
-.registration-content {
-  text-align: center;
-  max-width: 768px;
-  margin: 0 auto;
-}
-
-.registration h2 {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1.5rem;
-}
-
-.registration p {
-  font-size: 1.25rem;
-  color: #9ca3af;
-  margin-bottom: 3rem;
-}
-
-.registration-card {
-  background: linear-gradient(90deg, #7c3aed, #3b82f6, #06b6d4);
-  padding: 2rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-}
-
-.registration-card .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.card-text h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.card-text p {
-  color: #bfdbfe;
-  margin: 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  text-align: center;
-}
-
-.stat-number {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.stat:nth-child(1) .stat-number {
-  color: #06b6d4;
-}
-
-.stat:nth-child(2) .stat-number {
-  color: #7c3aed;
-}
-
-.stat:nth-child(3) .stat-number {
-  color: #ec4899;
-}
-
-.stat-label {
-  color: #9ca3af;
+  line-height: 1.5;
+  color: #c7d2fe;
 }
 
 /* Footer */
 .footer {
+  padding: 3rem 0;
   background: #111827;
-  padding: 2rem 0;
-  border-top: 1px solid rgba(75, 85, 99, 0.3);
   text-align: center;
-}
-
-.footer p {
   color: #9ca3af;
+  font-size: 0.875rem;
 }
 
 /* Animations */
-@keyframes logoAnimation {
-  from {
-    transform: scale(0) rotate(-180deg);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
-}
-
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes loadingProgress {
-  from {
+  0% {
     transform: translateX(-100%);
   }
-  to {
+  100% {
     transform: translateX(0);
   }
 }
 
 @keyframes dotPulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
+  0%, 100% {
+    opacity: 0.3;
   }
   50% {
-    transform: scale(1.2);
     opacity: 1;
   }
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
   100% {
-    transform: translateY(0) translateX(-50%);
-  }
-  40% {
-    transform: translateY(-10px) translateX(-50%);
-  }
-  60% {
-    transform: translateY(-5px) translateX(-50%);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-buttons button {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .registration-card .card-content {
-    flex-direction: column;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 640px) {
-  .hero-buttons {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .registration-card .card-content {
-    flex-direction: row;
-  }
-}
-
-/* Scroll Animations */
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease-out;
-}
-
-.fade-in-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.scale-in {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.6s ease-out;
-}
-
-.scale-in.visible {
-  opacity: 1;
-  transform: scale(1);
-}
