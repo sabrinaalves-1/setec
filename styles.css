@@ -55,13 +55,10 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.logo-image {
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-  animation: logoAnimation 1s ease-out;
-}
-
+.logo-text
+{ font-size: 3rem; 
+ font-weight: bold; 
+ color: #1e3a8a; }
 
 .loading-title {
   font-size: 4rem;
